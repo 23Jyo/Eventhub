@@ -29,5 +29,7 @@ body {
   #passwordStrength {
     font-size: 14px;
   }
-
+a{
+  text-align: left;
+}
   
