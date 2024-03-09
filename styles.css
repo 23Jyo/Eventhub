@@ -6,10 +6,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('./back1.jpg'); /* Replace 'background.jpg' with the path to your image */
-    background-size: cover; /* Cover the entire background */
-    background-repeat: no-repeat; /* Do not repeat the background image */
-    background-position: center; /* Center the background image */
+    background-image: url('./back1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
       
   }
   
