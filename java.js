@@ -25,7 +25,24 @@ function CheckPasswordStrength(password)
      {
         strength += 1;
      }
-
-     return strength;
-    
+     var strengthText = "";
+    switch (strength) {
+        case 0:
+            strengthText = "Weak";
+            break;
+        case 1:
+            strengthText = "Moderate";
+            break;
+        case 2:
+            strengthText = "Strong";
+            break;
+        default:
+            strengthText = "Very Strong"; 
+            break;
+    }
+    document.getElementById("passwordStrength").innerText = "Password strength: " + strengthText;
+    return strengthText;
 }
+    
+
+
