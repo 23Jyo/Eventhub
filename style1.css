@@ -46,8 +46,14 @@ footer{
     text-decoration: none;
   }
   body{
-    background-color: white;
-  }
+    margin: 0;
+    padding: 0;
+    background-image: url('./back.jpg');
+    background-size: cover;
+    background-position: center; 
+    font-family: Arial, sans-serif; 
+}
+  
   ul{
     font-size: 25px;
   }
