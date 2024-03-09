@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Password Checker</title>
+  <script src="java.js"></script> 
   <link rel="stylesheet" href="styles.css">
   <style>
     header ul {
@@ -29,10 +30,14 @@
 <div class="container">
 <h1>Password Checker</h1> 
 <input type="password" id="passwordInput" placeholder="Enter your password"> 
-<button id="checkbutton">Check</button> 
+<button type="button" id="checkbutton" onclick="CallFunction()" >Check</button> 
 <div id="passwordStrength"></div> 
 </div>
 
-<script src="java.js"></script> 
+<script>
+  function CallFunction(){
+  document.getElementById("passwordStrength").innerHTML=CheckPasswordStrength(document.getElementById('passwordInput').value)
+  }
+</script>
 </body> 
 </html>
