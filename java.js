@@ -1,5 +1,16 @@
-const nextPageButton = document.getElementById('nextPageButton');
+function checkPassword() {
+  const passwordInput = document.getElementById('password');
+  const resultElement = document.getElementById('result');
+  const password = passwordInput.value;
 
-nextPageButton.addEventListener('click', function() {
-  window.location.href = 'nextpage.html'; // Change 'nextpage.html' to the desired URL of the next page
-});
+  // You can replace this with your own password strength checking logic or use a library like zxcvbn
+  const passwordStrength = zxcvbn(password);
+
+  if (passwordStrength.score >= 3) {
+      resultElement.innerText = 'Password is strong!';
+      resultElement.style.color = 'green';
+  } else {
+      resultElement.innerText = 'Password is weak. Please choose a stronger password.';
+      resultElement.style.color = 'red';
+  }
+}
