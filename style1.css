@@ -1,7 +1,8 @@
 h1{
     text-align: center;
-    color: rgb(236, 5, 5);
+    color: darkviolet;
     font-size: 50px;
+    font-weight: bold;
 }
 
 h2{
@@ -58,7 +59,7 @@ footer{
     margin-top: 30px;
   }
   .image_div{
-    width:35vw;
+    width:25vw;
   }
   .description_div{
     width:50vw;
