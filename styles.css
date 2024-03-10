@@ -9,6 +9,10 @@ body {
     background-image: url('./back1.jpg'); 
     background-size: cover;
     background-position: center; 
+    background-image: url('./back1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
       
   }
   
@@ -28,10 +32,13 @@ body {
   #passwordStrength {
     font-size: 14px;
   }
-  #checkbutton {
-    border-radius: 5px;
-    background: palevioletred;
-    padding: 10px;
-    width: 100px;
-    height: 50;
-  }
+a{
+  text-align: left;
+}
+  
+
+#headerid {
+  position: absolute;
+    top: 0;
+    left: 0;
+}
